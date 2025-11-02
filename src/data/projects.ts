@@ -6,6 +6,7 @@ export interface TechStackItem {
 export interface Project {
   id: string;
   title: string;
+  shortDescription: string; // Short plain text description
   description: string; // Markdown supported
   techStack: TechStackItem[];
   images: {
@@ -20,9 +21,9 @@ export const projects: Project[] = [
   {
     id: "project-1",
     title: "E-Commerce Platform",
+    shortDescription:
+      "A modern, full-stack e-commerce platform with real-time updates, secure payments, and comprehensive analytics.",
     description: `
-# E-Commerce Platform
-
 A modern, full-stack e-commerce platform built with the latest web technologies.
 
 ## Key Features
@@ -70,9 +71,9 @@ Built with performance and user experience in mind.
   {
     id: "project-2",
     title: "Task Management App",
+    shortDescription:
+      "A collaborative task management tool with drag-and-drop interface, real-time collaboration, and custom workflows for agile teams.",
     description: `
-# Task Management Application
-
 A collaborative task management tool for teams.
 
 ## Features
@@ -116,9 +117,9 @@ Perfect for agile teams looking to streamline their workflow.
   {
     id: "project-3",
     title: "Analytics Dashboard",
+    shortDescription:
+      "Real-time analytics platform with beautiful visualizations, custom reports, data export capabilities, and full REST API access.",
     description: `
-# Analytics Dashboard
-
 Real-time analytics platform with beautiful visualizations.
 
 ## Highlights
@@ -166,9 +167,9 @@ Designed for data-driven decision making.
   {
     id: "project-4",
     title: "Social Media Platform",
+    shortDescription:
+      "A modern social networking platform with user profiles, real-time messaging, media sharing, and advanced privacy controls.",
     description: `
-# Social Media Platform
-
 A modern social networking platform connecting people worldwide.
 
 ## Core Features
@@ -224,7 +225,7 @@ export function getProjectById(id: string): Project | undefined {
 export function getProjectsByTech(techName: string): Project[] {
   return projects.filter((project) =>
     project.techStack.some(
-      (tech) => tech.name.toLowerCase() === techName.toLowerCase()
-    )
+      (tech) => tech.name.toLowerCase() === techName.toLowerCase(),
+    ),
   );
 }

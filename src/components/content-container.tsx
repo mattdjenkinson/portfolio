@@ -32,9 +32,13 @@ const itemVariants = {
 const ContentContainer = ({
   children,
   className,
+  margin = "-100px",
+  id,
 }: {
   children: ReactNode;
   className?: string;
+  id?: string;
+  margin?: string;
 }) => {
   const childrenArray = Children.toArray(children);
 
@@ -42,12 +46,13 @@ const ContentContainer = ({
     <motion.section
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, margin: "-100px" }}
+      viewport={{ once: true, margin }}
       variants={containerVariants}
       className={cn(
-        "mx-auto max-w-7xl px-6 pt-10 pb-24 sm:pb-32 lg:px-8",
+        "z-10 mx-auto max-w-7xl px-6 pt-10 pb-10 lg:px-8",
         className,
       )}
+      id={id}
     >
       {childrenArray.map((child, index) => (
         <motion.div key={index} variants={itemVariants}>
