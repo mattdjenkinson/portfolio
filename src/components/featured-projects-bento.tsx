@@ -114,7 +114,7 @@ const FeaturedProjectBentoGrid = () => {
       >
         <Link
           href={`/projects/${project4.id}`}
-          className="group relative cursor-pointer"
+          className="group bg-card relative cursor-pointer"
         >
           <div className="bg-card absolute inset-px rounded-lg transition-colors max-lg:rounded-b-4xl lg:rounded-r-4xl" />
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
