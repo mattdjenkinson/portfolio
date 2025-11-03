@@ -5,9 +5,8 @@ import { join } from "path";
 
 export async function GET(request: NextRequest) {
   try {
-    const { searchParams } = new URL(request.url);
+    const { searchParams } = request.nextUrl;
 
-    // Extract parameters from URL
     const title = searchParams.get("title") || "Matthew Jenkinson";
     const description =
       searchParams.get("description") || "Full Stack Developer";

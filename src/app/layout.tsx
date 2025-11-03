@@ -20,6 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.matthewjenkinson.dev"),
   title: {
     template: "%s | Matthew Jenkinson",
     default: "Matthew Jenkinson",
