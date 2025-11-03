@@ -48,6 +48,17 @@ export const getNowPlaying = async () => {
 
   const data = await response.json();
 
+  if (data.currently_playing_type === "episode") {
+    return {
+      isPlaying: false,
+      title: "",
+      album: "",
+      artist: "",
+      albumImageUrl: "",
+      songUrl: "",
+    };
+  }
+
   return data;
 };
 

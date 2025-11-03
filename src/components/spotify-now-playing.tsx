@@ -100,7 +100,7 @@ const SpotifyNowPlaying = ({ data }: { data: SpotifyData }) => {
           </motion.span>
         </div>
         <motion.div
-          className="truncate text-sm font-medium transition-colors group-hover:text-green-500"
+          className="max-w-[200px] truncate text-sm font-medium transition-colors group-hover:text-green-500 md:max-w-none"
           initial={{ x: -10, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ delay: 0.2 }}
