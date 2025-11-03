@@ -1,3 +1,5 @@
+"use client";
+
 import ContentContainer from "@/components/content-container";
 import { Button } from "@/components/ui/button";
 import { ArrowLeftIcon } from "lucide-react";
