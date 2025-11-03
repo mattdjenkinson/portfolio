@@ -1,4 +1,3 @@
-import { NextApiRequest, NextApiResponse } from "next";
 import querystring from "querystring";
 
 const {
@@ -46,11 +45,26 @@ const getAccessToken = async () => {
 export const getNowPlaying = async () => {
   const access_token = await getAccessToken();
 
-  return fetch(NOW_PLAYING_ENDPOINT, {
+  const response = await fetch(NOW_PLAYING_ENDPOINT, {
     headers: {
       Authorization: `Bearer ${access_token}`,
     },
-  }).then((res) => res.json());
+  });
+
+  if (response.statusText === "No Content") {
+    return {
+      isPlaying: false,
+      title: "",
+      album: "",
+      artist: "",
+      albumImageUrl: "",
+      songUrl: "",
+    };
+  }
+
+  const data = await response.json();
+
+  return data;
 };
 
 export default async function spotify() {
@@ -58,13 +72,13 @@ export default async function spotify() {
 
   const data = {
     isPlaying: response.is_playing,
-    title: response.item.name,
-    album: response.item.album.name,
-    artist: response.item.album.artists
+    title: response.item?.name,
+    album: response.item?.album?.name,
+    artist: response.item?.album?.artists
       .map((artist: { name: string }) => artist.name)
       .join(", "),
-    albumImageUrl: response.item.album.images[0].url,
-    songUrl: response.item.external_urls.spotify,
+    albumImageUrl: response.item?.album?.images[0]?.url,
+    songUrl: response.item?.external_urls?.spotify,
   };
 
   return data;
