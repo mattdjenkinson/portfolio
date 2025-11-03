@@ -49,7 +49,7 @@ const ContentContainer = ({
       viewport={{ once: true, margin }}
       variants={containerVariants}
       className={cn(
-        "z-10 mx-auto max-w-7xl px-6 pt-10 pb-10 lg:px-8",
+        "relative z-10 mx-auto max-w-7xl px-6 pt-10 pb-10 lg:px-8",
         className,
       )}
       id={id}

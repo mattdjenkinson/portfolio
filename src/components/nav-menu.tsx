@@ -27,7 +27,7 @@ const NavMenu = () => {
       initial={{ opacity: 0, y: -20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3, ease: "easeOut" }}
-      className="fixed bottom-4 left-4 z-20 h-12 rounded-full md:top-4 md:right-4 md:bottom-auto md:left-auto"
+      className="fixed bottom-4 left-4 z-50 h-12 rounded-full md:top-4 md:right-4 md:bottom-auto md:left-auto"
     >
       <NavigationMenu
         className="bg-foreground text-background rounded-full px-1 py-1 shadow"

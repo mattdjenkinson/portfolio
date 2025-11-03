@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const HomeHero = () => {
   return (
-    <div style={{ width: "100%", height: "1000px", position: "relative" }}>
+    <div style={{ width: "100%", height: "800px", position: "relative" }}>
       <GradientBlinds
         gradientColors={["#72e3ad", "#7472E3"]}
         angle={20}
@@ -48,7 +48,7 @@ const HomeHero = () => {
           className="pointer-events-none mt-8 text-lg font-medium text-pretty sm:text-xl/8 md:max-w-lg"
         >
           Full-stack developer in Bristol, UK. <br />
-          Crafting modern websites that feel quick, look sharp and just work.
+          Crafting modern websites that feel quick, look sharp, and just work.
         </motion.p>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -64,8 +64,8 @@ const HomeHero = () => {
       </div>
 
       {/* Gradient Blur */}
-      <div className="pointer-events-none absolute bottom-0 z-0 h-40 w-full">
-        <div className="to-background absolute inset-0 z-0 bg-gradient-to-b from-transparent" />
+      <div className="pointer-events-none absolute bottom-0 z-20 h-40 w-full">
+        <div className="to-background absolute inset-0 bg-gradient-to-b from-transparent" />
       </div>
     </div>
   );

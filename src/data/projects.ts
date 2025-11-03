@@ -28,14 +28,14 @@ A modern, full-stack e-commerce platform built with the latest web technologies.
 
 ## Key Features
 
-- **Queue-based architecture**: Emails, PDFs and customer notifications are generated and sent using a queue-based architecture to ensure reliability and scalability.
-- **Responsive Design**: Fully responsive across all devices
-- **Real-time API**: Real time retrival of vehicle data from the DVLA API and other third party APIs.
-- **Secure Payments**: Integrated with Braintree for secure transactions
-- **Admin Dashboard**: Admin dashboard for managing content and customers using Payload CMS
-- **Fully Customisable UI**: Fully customisable by the client via the admin dashboard.
+- **Queue-based Architecture**: Emails, PDFs and customer notifications are generated and sent using a queue-based architecture to ensure reliability and scalability.
+- **Responsive Design**: Fully responsive across all devices.
+- **Real-time API**: Real-time retrieval of vehicle data from the DVLA API and other third party APIs.
+- **Secure Payments**: Integrated with Braintree for secure transactions.
+- **Admin Dashboard**: Admin dashboard for managing content and customers using Payload CMS.
+- **Fully Customisable UI**: Fully editable by the client via the admin dashboard.
 
-Built with performance and user experience in mind. Pages are staticly generated and revalidated when new content is published via the admin dashboard with only small pockets of server side rendering for dynamic content.
+Built with performance and user experience in mind. Pages are statically generated and revalidated when new content is published via the admin dashboard with only small pockets of server side rendering for dynamic content.
     `.trim(),
     techStack: [
       {
@@ -84,16 +84,16 @@ Built with performance and user experience in mind. Pages are staticly generated
     shortDescription:
       "A modern, fully customisable photography portfolio website with a custom CMS. Using the latest Next.js and React features.",
     description: `
-A modern, fully customisable photography portfolio website with a custom CMS. The goal of this project was to give the client a clean portfolio website to showcare their portfolio but also keep it simple and easy to manage given their busy schedule
+A modern, fully customisable photography portfolio website with a custom CMS. The goal of this project was to give the client a clean website to showcase their portfolio but also keep it simple and easy to manage given their busy schedule.
 
 ## Key Features
 
-- **Fully Customisable UI**: Fully customisable by the client via the admin dashboard.
-- **Admin Dashboard**: Admin dashboard for managing content using Payload CMS
+- **Fully Customisable UI**: Fully editable by the client via the admin dashboard.
+- **Admin Dashboard**: Admin dashboard for managing content using Payload CMS.
 
 Built with performance and user experience in mind. Pages are staticly generated and revalidated when new content is published via the admin dashboard with only small pockets of server side rendering for dynamic content.
 
-Along side this build I created a dynamic form that the client can use at wedding fayres and events to collect contact details and enquiries from potential clients.
+Alongside this build I created a dynamic form that the client can use at wedding fayres and events to collect contact details and enquiries from potential clients.
     `.trim(),
     techStack: [
       {
@@ -126,13 +126,13 @@ Along side this build I created a dynamic form that the client can use at weddin
     shortDescription:
       "A Next.js statically generated weightlifting website with a custom CMS.",
     description: `
-A Next.js statically generated weightlifting website with a custom CMS. The goal of this project was to create a place to showcase the weightlifting club and its coaches.
+A Next.js statically generated weightlifting website with a custom CMS. The goal of this project was to create a place to showcase the weightlifting club and coaches.
 
 ## Key Features
 
 - **Statically Generated**: Pages are staticly generated and revalidated when new content is published via the admin dashboard with only small pockets of server side rendering for dynamic content.
-- **Fully Customisable UI**: Fully customisable by the client via the admin dashboard.
-- **Admin Dashboard**: Admin dashboard for managing content using Directus CMS
+- **Fully Customisable UI**: Fully editable by the client via the admin dashboard.
+- **Admin Dashboard**: Admin dashboard for managing content using Directus CMS.
 
     `.trim(),
     techStack: [
@@ -170,10 +170,7 @@ A Shopify e-commerce store for US whiskey brand Kings County Distillery. The goa
 
 ## Key Features
 
-- **Fully Customisable UI**: Fully customisable by the client via the Shopify admin dashboard.
-
-
-
+- **Fully Customisable UI**: Fully editable by the client via the Shopify admin dashboard.
     `.trim(),
     techStack: [
       {
@@ -210,7 +207,7 @@ A Shopify e-commerce store for Italian restaurant Rossella. The goal of this pro
 
 ## Key Features
 
-- **Fully Customisable UI**: Fully customisable by the client via the Shopify admin dashboard.
+- **Fully Customisable UI**: Fully editable by the client via the Shopify admin dashboard.
 
 
     `.trim(),
@@ -249,7 +246,7 @@ A Shopify e-commerce store for UK based alcohol brand Windrush 1027. The goal of
 
 ## Key Features
 
-- **Fully Customisable UI**: Fully customisable by the client via the Shopify admin dashboard.
+- **Fully Customisable UI**: Fully editable by the client via the Shopify admin dashboard.
 
 
     `.trim(),
@@ -289,8 +286,8 @@ A Next.js statically generated website for Laura Bennett, a freelance copywriter
 ## Key Features
 
 - **Statically Generated**: Pages are staticly generated and revalidated when new content is published via the admin dashboard with only small pockets of server side rendering for dynamic content.
-- **Fully Customisable UI**: Fully customisable by the client via the admin dashboard.
-- **Admin Dashboard**: Admin dashboard for managing content using Hygraph CMS
+- **Fully Customisable UI**: Fully editble by the client via the admin dashboard.
+- **Admin Dashboard**: Admin dashboard for managing content using Hygraph CMS.
 
     `.trim(),
     techStack: [

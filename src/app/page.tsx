@@ -9,20 +9,11 @@ export default function Home() {
     <>
       {/* Hero */}
       <HomeHero />
-      {/* Featured Projects */}
-      <ContentContainer className="-mt-[400px]" id="projects">
-        <h2 className="relative z-30 text-2xl font-semibold">
-          Recent Projects
-        </h2>
-        <FeaturedProjectBentoGrid />
-        <div className="mt-4 flex justify-end">
-          <Link href="/projects">
-            <Button variant="link">View All Projects</Button>
-          </Link>
-        </div>
-      </ContentContainer>
       {/* About */}
-      <ContentContainer id="about" className="flex flex-col gap-4">
+      <ContentContainer
+        id="about"
+        className="z-30 -mt-[200px] flex flex-col gap-4"
+      >
         <h2 className="pb-6 text-2xl font-semibold">About</h2>
         <p className="max-w-2xl">
           Hey, I&apos;m Matt, a full-stack developer based in Bristol who loves
@@ -43,6 +34,18 @@ export default function Home() {
           playing far too loud or watching Aston Villa test my emotional
           stability for ninety minutes 😒.
         </p>
+      </ContentContainer>
+      {/* Featured Projects */}
+      <ContentContainer id="projects">
+        <h2 className="relative z-30 text-2xl font-semibold">
+          Recent Projects
+        </h2>
+        <FeaturedProjectBentoGrid />
+        <div className="mt-4 flex justify-end">
+          <Link href="/projects">
+            <Button variant="link">View All Projects</Button>
+          </Link>
+        </div>
       </ContentContainer>
     </>
   );
