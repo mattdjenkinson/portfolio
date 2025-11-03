@@ -53,6 +53,24 @@ const Footer = () => {
         <Suspense>
           <Copyright />
         </Suspense>
+
+        <div className="text-muted-foreground mt-2 flex items-center gap-2">
+          <a
+            href="https://sturdy.build"
+            target="_blank"
+            className="hover:text-primary text-xs transition-colors duration-300"
+          >
+            sturdy.build
+          </a>
+          <span>|</span>
+          <a
+            href="https://bristol.dev"
+            target="_blank"
+            className="hover:text-primary text-xs transition-colors duration-300"
+          >
+            bristol.dev
+          </a>
+        </div>
       </ContentContainer>
     </footer>
   );
