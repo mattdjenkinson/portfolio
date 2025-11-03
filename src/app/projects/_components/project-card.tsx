@@ -43,13 +43,13 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             </p>
 
             {/* Tech Stack */}
-            <div className="mt-4">
+            <div className="mt-4 mb-4">
               <TechStackList techStack={project.techStack} />
             </div>
 
             {/* View Project Link */}
-            <Link href={`/projects/${project.id}`} className="mt-4">
-              <Button variant="secondary" className="">
+            <Link href={`/projects/${project.id}`} className="mt-auto">
+              <Button variant="secondary" className="" size="sm">
                 View Project
                 <svg
                   className="h-4 w-4 transition-transform group-hover:translate-x-1"

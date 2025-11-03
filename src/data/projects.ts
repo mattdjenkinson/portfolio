@@ -22,20 +22,20 @@ export const projects: Project[] = [
     id: "carveto",
     title: "CarVeto",
     shortDescription:
-      "A modern, full-stack e-commerce platform with custom CMS.",
+      "A fast, scalable e-commerce platform built from the ground up with a custom CMS.",
     description: `
-A modern, full-stack e-commerce platform built with the latest web technologies. The goal of this project was to replace an old Wordpress site with a modern, fast, secure and fully customisable e-commerce platform.
+CarVeto is a full-stack e-commerce rebuild designed to replace an outdated Wordpress setup with a faster, more secure, and fully custom platform.
 
 ## Key Features
 
-- **Queue-based Architecture**: Emails, PDFs and customer notifications are generated and sent using a queue-based architecture to ensure reliability and scalability.
-- **Responsive Design**: Fully responsive across all devices.
-- **Real-time API**: Real-time retrieval of vehicle data from the DVLA API and other third party APIs.
-- **Secure Payments**: Integrated with Braintree for secure transactions.
-- **Admin Dashboard**: Admin dashboard for managing content and customers using Payload CMS.
-- **Fully Customisable UI**: Fully editable by the client via the admin dashboard.
+- **Queue-based Architecture**: Emails, PDFs, and notifications are handled through a queue system for reliability and scalability.
+- **Responsive Design**: Seamless experience across all devices.
+- **Real-time API**: Live vehicle data fetched from DVLA and other third-party APIs.
+- **Secure Payments**: Integrated with Braintree for smooth, secure transactions.
+- **Custom CMS**: Content and customers managed easily through Payload CMS.
+- **Fully Editable UI**: Every section of the site is client-editable through the dashboard.
 
-Built with performance and user experience in mind. Pages are statically generated and revalidated when new content is published via the admin dashboard with only small pockets of server side rendering for dynamic content.
+Optimized for performance and flexibility, the site uses static generation with revalidation and selective server-side rendering for dynamic content.
     `.trim(),
     techStack: [
       {
@@ -82,18 +82,17 @@ Built with performance and user experience in mind. Pages are statically generat
     id: "iap-photography",
     title: "Ivy & Pine Photography",
     shortDescription:
-      "A modern, fully customisable photography portfolio website with a custom CMS. Using the latest Next.js and React features.",
+      "A sleek, easy-to-manage photography portfolio with a custom CMS and intuitive admin tools.",
     description: `
-A modern, fully customisable photography portfolio website with a custom CMS. The goal of this project was to give the client a clean website to showcase their portfolio but also keep it simple and easy to manage given their busy schedule.
+Ivy & Pine Photography is a modern portfolio site built to help busy photographers showcase their work beautifully — without the stress of managing complex systems.
 
 ## Key Features
 
-- **Fully Customisable UI**: Fully editable by the client via the admin dashboard.
-- **Admin Dashboard**: Admin dashboard for managing content using Payload CMS.
+- **Custom CMS**: Fully editable content via Payload CMS.
+- **Clean, Responsive Design**: Optimized for showcasing high-quality photography.
+- **Dynamic Contact Form**: Built for events and wedding fairs to capture client enquiries.
 
-Built with performance and user experience in mind. Pages are staticly generated and revalidated when new content is published via the admin dashboard with only small pockets of server side rendering for dynamic content.
-
-Alongside this build I created a dynamic form that the client can use at wedding fayres and events to collect contact details and enquiries from potential clients.
+Designed for simplicity and speed, the site is statically generated with revalidation for new content and minimal server rendering for dynamic sections.
     `.trim(),
     techStack: [
       {
@@ -124,16 +123,15 @@ Alongside this build I created a dynamic form that the client can use at wedding
     id: "rw-weightlifting",
     title: "Resilience Weightlifting",
     shortDescription:
-      "A Next.js statically generated weightlifting website with a custom CMS.",
+      "A bold, performance-focused site for a local weightlifting club, powered by a custom CMS.",
     description: `
-A Next.js statically generated weightlifting website with a custom CMS. The goal of this project was to create a place to showcase the weightlifting club and coaches.
+A statically generated website for Resilience Weightlifting, designed to highlight their coaches and training ethos through a fast, modern frontend.
 
 ## Key Features
 
-- **Statically Generated**: Pages are staticly generated and revalidated when new content is published via the admin dashboard with only small pockets of server side rendering for dynamic content.
-- **Fully Customisable UI**: Fully editable by the client via the admin dashboard.
-- **Admin Dashboard**: Admin dashboard for managing content using Directus CMS.
-
+- **Static Generation**: Blazing fast load times with on-demand revalidation.
+- **Custom CMS**: Content management powered by Directus.
+- **Editable Layouts**: Coaches and pages easily updated via the dashboard.
     `.trim(),
     techStack: [
       {
@@ -164,13 +162,14 @@ A Next.js statically generated weightlifting website with a custom CMS. The goal
     id: "kcd",
     title: "Kings County Distillery",
     shortDescription:
-      "A Shopify e-commerce store for US whiskey brand Kings County Distillery.",
+      "A clean, modern Shopify storefront for Brooklyn’s oldest whiskey distillery.",
     description: `
-A Shopify e-commerce store for US whiskey brand Kings County Distillery. The goal of this project was to create a clean, modern and mobile friendly e-commerce store with a custom theme that the client could easily manage and update.
+A Shopify-powered e-commerce store for Kings County Distillery — built to capture the brand’s craftsmanship through a simple, elegant shopping experience.
 
 ## Key Features
 
-- **Fully Customisable UI**: Fully editable by the client via the Shopify admin dashboard.
+- **Custom Shopify Theme**: Built from scratch for flexibility and performance.
+- **Client-Friendly CMS**: Fully editable via Shopify’s dashboard.
     `.trim(),
     techStack: [
       {
@@ -201,15 +200,14 @@ A Shopify e-commerce store for US whiskey brand Kings County Distillery. The goa
     id: "rossella",
     title: "Rossella Restaurant",
     shortDescription:
-      "A Shopify e-commerce store for Italian restaurant Rossella.",
+      "A contemporary restaurant site and online shop built with Shopify.",
     description: `
-A Shopify e-commerce store for Italian restaurant Rossella. The goal of this project was to create a clean, modern and mobile friendly restaurant website with a custom theme that the client could easily manage and update.
+Rossella’s new site brings their North London restaurant online — blending a welcoming aesthetic with a straightforward e-commerce experience.
 
 ## Key Features
 
-- **Fully Customisable UI**: Fully editable by the client via the Shopify admin dashboard.
-
-
+- **Custom Shopify Theme**: Clean, modern design built for flexibility.
+- **Client Control**: Easy updates through Shopify’s native admin tools.
     `.trim(),
     techStack: [
       {
@@ -240,15 +238,14 @@ A Shopify e-commerce store for Italian restaurant Rossella. The goal of this pro
     id: "windrush1027",
     title: "Windrush 1027",
     shortDescription:
-      "A Shopify e-commerce store for UK based alcohol brand Windrush 1027.",
+      "An elegant Shopify e-commerce site for the UK-based alcohol brand Windrush 1027.",
     description: `
-A Shopify e-commerce store for UK based alcohol brand Windrush 1027. The goal of this project was to create a clean, modern and mobile friendly e-commerce store with a custom theme that the client could easily manage and update.
+An e-commerce site for Windrush 1027 — designed to balance refined branding with a seamless buying experience.
 
 ## Key Features
 
-- **Fully Customisable UI**: Fully editable by the client via the Shopify admin dashboard.
-
-
+- **Custom Shopify Theme**: Purpose-built to match brand identity.
+- **Fully Editable**: Managed entirely through the Shopify dashboard.
     `.trim(),
     techStack: [
       {
@@ -279,16 +276,15 @@ A Shopify e-commerce store for UK based alcohol brand Windrush 1027. The goal of
     id: "laura-bennett",
     title: "Laura Bennett",
     shortDescription:
-      "A Next.js statically generated website for Laura Bennett, a freelance copywriter.",
+      "A minimal, content-driven portfolio site for freelance copywriter Laura Bennett.",
     description: `
-A Next.js statically generated website for Laura Bennett, a freelance copywriter. The goal of this project was to give Laura a place to showcase her work and services to potential clients.
+A statically generated website for freelance copywriter Laura Bennett — giving her a simple, professional space to showcase her writing and services.
 
 ## Key Features
 
-- **Statically Generated**: Pages are staticly generated and revalidated when new content is published via the admin dashboard with only small pockets of server side rendering for dynamic content.
-- **Fully Customisable UI**: Fully editble by the client via the admin dashboard.
-- **Admin Dashboard**: Admin dashboard for managing content using Hygraph CMS.
-
+- **Static Generation**: Ultra-fast pages with revalidation for new content.
+- **Hygraph CMS**: Content managed effortlessly through a clean interface.
+- **Custom Layouts**: Fully adjustable and easy to update.
     `.trim(),
     techStack: [
       {
