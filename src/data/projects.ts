@@ -19,21 +19,23 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: "project-1",
-    title: "E-Commerce Platform",
+    id: "carveto",
+    title: "CarVeto",
     shortDescription:
-      "A modern, full-stack e-commerce platform with real-time updates, secure payments, and comprehensive analytics.",
+      "A modern, full-stack e-commerce platform with custom CMS.",
     description: `
-A modern, full-stack e-commerce platform built with the latest web technologies.
+A modern, full-stack e-commerce platform built with the latest web technologies. The goal of this project was to replace an old Wordpress site with a modern, fast, secure and fully customisable e-commerce platform.
 
 ## Key Features
 
+- **Queue-based architecture**: Emails, PDFs and customer notifications are generated and sent using a queue-based architecture to ensure reliability and scalability.
 - **Responsive Design**: Fully responsive across all devices
-- **Real-time Updates**: Live inventory and order tracking
-- **Secure Payments**: Integrated with Stripe for secure transactions
-- **Admin Dashboard**: Comprehensive analytics and management tools
+- **Real-time API**: Real time retrival of vehicle data from the DVLA API and other third party APIs.
+- **Secure Payments**: Integrated with Braintree for secure transactions
+- **Admin Dashboard**: Admin dashboard for managing content and customers using Payload CMS
+- **Fully Customisable UI**: Fully customisable by the client via the admin dashboard.
 
-Built with performance and user experience in mind.
+Built with performance and user experience in mind. Pages are staticly generated and revalidated when new content is published via the admin dashboard with only small pockets of server side rendering for dynamic content.
     `.trim(),
     techStack: [
       {
@@ -57,130 +59,41 @@ Built with performance and user experience in mind.
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
       },
       {
-        name: "Shopify",
-        icon: "/shopify-logo.svg",
-      },
-    ],
-    images: {
-      mobile: "/projects/kcd-mobile.png",
-      fullscreen: "/projects/kcd-desktop.png",
-    },
-    url: "https://kcd.app",
-    featured: true,
-  },
-  {
-    id: "project-2",
-    title: "Task Management App",
-    shortDescription:
-      "A collaborative task management tool with drag-and-drop interface, real-time collaboration, and custom workflows for agile teams.",
-    description: `
-A collaborative task management tool for teams.
-
-## Features
-
-- Drag-and-drop interface
-- Real-time collaboration
-- Custom workflows
-- Mobile apps for iOS and Android
-
-Perfect for agile teams looking to streamline their workflow.
-    `.trim(),
-    techStack: [
-      {
-        name: "React",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-      },
-      {
-        name: "Node.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-      },
-      {
-        name: "Express",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-      },
-      {
-        name: "MongoDB",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-      },
-      {
-        name: "Shopify",
-        icon: "/shopify-logo.svg",
-      },
-    ],
-    images: {
-      mobile: "/projects/kcd-mobile.png",
-      fullscreen: "/projects/kcd-desktop.png",
-    },
-    url: "https://example-taskapp.com",
-    featured: true,
-  },
-  {
-    id: "project-3",
-    title: "Analytics Dashboard",
-    shortDescription:
-      "Real-time analytics platform with beautiful visualizations, custom reports, data export capabilities, and full REST API access.",
-    description: `
-Real-time analytics platform with beautiful visualizations.
-
-## Highlights
-
-- **Real-time Data**: Live updates with WebSocket connections
-- **Custom Reports**: Build your own reports and dashboards
-- **Data Export**: Export to CSV, PDF, and Excel
-- **API Access**: Full REST API for integrations
-
-Designed for data-driven decision making.
-    `.trim(),
-    techStack: [
-      {
-        name: "Vue.js",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg",
-      },
-      {
-        name: "TypeScript",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-      },
-      {
-        name: "Python",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-      },
-      {
-        name: "Django",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
-      },
-      {
         name: "Redis",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
       },
       {
-        name: "Docker",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+        name: "AWS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+      },
+      {
+        name: "Upstash",
+        icon: "/upstash-icon-dark-bg.svg",
       },
     ],
     images: {
-      mobile: "/projects/kcd-mobile.png",
-      fullscreen: "/projects/kcd-desktop.png",
+      mobile: "/projects/carveto_mobile.jpg",
+      fullscreen: "/projects/carveto_desktop.jpg",
     },
-    url: "https://example-analytics.com",
+    url: "https://www.carveto.co.uk",
     featured: true,
   },
   {
-    id: "project-4",
-    title: "Social Media Platform",
+    id: "iap-photography",
+    title: "Ivy & Pine Photography",
     shortDescription:
-      "A modern social networking platform with user profiles, real-time messaging, media sharing, and advanced privacy controls.",
+      "A modern, fully customisable photography portfolio website with a custom CMS. Using the latest Next.js and React features.",
     description: `
-A modern social networking platform connecting people worldwide.
+A modern, fully customisable photography portfolio website with a custom CMS. The goal of this project was to give the client a clean portfolio website to showcare their portfolio but also keep it simple and easy to manage given their busy schedule
 
-## Core Features
+## Key Features
 
-- User profiles and connections
-- Real-time messaging
-- Media sharing (photos, videos)
-- Stories and live streaming
-- Advanced privacy controls
+- **Fully Customisable UI**: Fully customisable by the client via the admin dashboard.
+- **Admin Dashboard**: Admin dashboard for managing content using Payload CMS
 
-Built with scalability and security as top priorities.
+Built with performance and user experience in mind. Pages are staticly generated and revalidated when new content is published via the admin dashboard with only small pockets of server side rendering for dynamic content.
+
+Along side this build I created a dynamic form that the client can use at wedding fayres and events to collect contact details and enquiries from potential clients.
     `.trim(),
     techStack: [
       {
@@ -188,28 +101,222 @@ Built with scalability and security as top priorities.
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       },
       {
-        name: "GraphQL",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+        name: "TypeScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
       },
       {
         name: "PostgreSQL",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
       },
+    ],
+    images: {
+      mobile: "/projects/iap_mobile.jpg",
+      fullscreen: "/projects/iap_desktop.jpg",
+    },
+    url: "https://www.ivyandpinephotography.com",
+    featured: true,
+  },
+  {
+    id: "rw-weightlifting",
+    title: "Resilience Weightlifting",
+    shortDescription:
+      "A Next.js statically generated weightlifting website with a custom CMS.",
+    description: `
+A Next.js statically generated weightlifting website with a custom CMS. The goal of this project was to create a place to showcase the weightlifting club and its coaches.
+
+## Key Features
+
+- **Statically Generated**: Pages are staticly generated and revalidated when new content is published via the admin dashboard with only small pockets of server side rendering for dynamic content.
+- **Fully Customisable UI**: Fully customisable by the client via the admin dashboard.
+- **Admin Dashboard**: Admin dashboard for managing content using Directus CMS
+
+    `.trim(),
+    techStack: [
       {
-        name: "AWS",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
+        name: "Next.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       },
       {
-        name: "Kubernetes",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-original.svg",
+        name: "TypeScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "GraphQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
       },
     ],
     images: {
-      mobile: "/projects/kcd-mobile.png",
-      fullscreen: "/projects/kcd-desktop.png",
+      mobile: "/projects/rw_mobile.jpg",
+      fullscreen: "/projects/rw_desktop.jpg",
     },
-    url: "https://example-social.com",
+    url: "https://www.resilienceweightlifting.com",
     featured: true,
+  },
+  {
+    id: "kcd",
+    title: "Kings County Distillery",
+    shortDescription:
+      "A Shopify e-commerce store for US whiskey brand Kings County Distillery.",
+    description: `
+A Shopify e-commerce store for US whiskey brand Kings County Distillery. The goal of this project was to create a clean, modern and mobile friendly e-commerce store with a custom theme that the client could easily manage and update.
+
+## Key Features
+
+- **Fully Customisable UI**: Fully customisable by the client via the Shopify admin dashboard.
+
+
+
+    `.trim(),
+    techStack: [
+      {
+        name: "Shopify",
+        icon: "/shopify-logo.svg",
+      },
+      {
+        name: "JavaScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "HTML",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      {
+        name: "CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+    ],
+    images: {
+      mobile: "/projects/kcd_mobile.jpg",
+      fullscreen: "/projects/kcd_desktop.jpg",
+    },
+    url: "https://www.kingscountydistillery.com",
+    featured: true,
+  },
+  {
+    id: "rossella",
+    title: "Rossella Restaurant",
+    shortDescription:
+      "A Shopify e-commerce store for Italian restaurant Rossella.",
+    description: `
+A Shopify e-commerce store for Italian restaurant Rossella. The goal of this project was to create a clean, modern and mobile friendly restaurant website with a custom theme that the client could easily manage and update.
+
+## Key Features
+
+- **Fully Customisable UI**: Fully customisable by the client via the Shopify admin dashboard.
+
+
+    `.trim(),
+    techStack: [
+      {
+        name: "Shopify",
+        icon: "/shopify-logo.svg",
+      },
+      {
+        name: "JavaScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "HTML",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      {
+        name: "CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+    ],
+    images: {
+      mobile: "/projects/rossella_mobile.jpg",
+      fullscreen: "/projects/rossella_desktop.jpg",
+    },
+    url: "https://www.rossella.co.uk",
+    featured: false,
+  },
+  {
+    id: "windrush1027",
+    title: "Windrush 1027",
+    shortDescription:
+      "A Shopify e-commerce store for UK based alcohol brand Windrush 1027.",
+    description: `
+A Shopify e-commerce store for UK based alcohol brand Windrush 1027. The goal of this project was to create a clean, modern and mobile friendly e-commerce store with a custom theme that the client could easily manage and update.
+
+## Key Features
+
+- **Fully Customisable UI**: Fully customisable by the client via the Shopify admin dashboard.
+
+
+    `.trim(),
+    techStack: [
+      {
+        name: "Shopify",
+        icon: "/shopify-logo.svg",
+      },
+      {
+        name: "JavaScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      },
+      {
+        name: "HTML",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      },
+      {
+        name: "CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      },
+    ],
+    images: {
+      mobile: "/projects/windrush1027_mobile.jpg",
+      fullscreen: "/projects/windrush1027_desktop.jpg",
+    },
+    url: "https://www.windrush1027.com",
+    featured: false,
+  },
+  {
+    id: "laura-bennett",
+    title: "Laura Bennett",
+    shortDescription:
+      "A Next.js statically generated website for Laura Bennett, a freelance copywriter.",
+    description: `
+A Next.js statically generated website for Laura Bennett, a freelance copywriter. The goal of this project was to give Laura a place to showcase her work and services to potential clients.
+
+## Key Features
+
+- **Statically Generated**: Pages are staticly generated and revalidated when new content is published via the admin dashboard with only small pockets of server side rendering for dynamic content.
+- **Fully Customisable UI**: Fully customisable by the client via the admin dashboard.
+- **Admin Dashboard**: Admin dashboard for managing content using Hygraph CMS
+
+    `.trim(),
+    techStack: [
+      {
+        name: "Next.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        name: "TypeScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "GraphQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+      },
+    ],
+    images: {
+      mobile: "/projects/lb_mobile.jpg",
+      fullscreen: "/projects/lb_desktop.jpg",
+    },
+    url: "https://www.laurabennettwrites.com",
+    featured: false,
   },
 ];
 

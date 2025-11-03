@@ -18,13 +18,13 @@ const FeaturedProjectBentoGrid = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.3, delay: 0 }}
-        className="lg:row-span-2"
+        className="min-h-[400px] lg:row-span-2"
       >
         <Link
           href={`/projects/${project1.id}`}
-          className="group relative cursor-pointer"
+          className="group relative block h-full cursor-pointer"
         >
-          <div className="bg-card absolute inset-px rounded-lg transition-colors lg:rounded-l-4xl" />
+          <div className="bg-card absolute inset-px h-full w-full rounded-lg transition-colors lg:rounded-l-4xl" />
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-l-[calc(2rem+1px)]">
             <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
               <p className="mt-2 text-lg font-medium tracking-tight">
@@ -43,7 +43,7 @@ const FeaturedProjectBentoGrid = () => {
               </div>
             </div>
           </div>
-          <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 lg:rounded-l-4xl dark:outline-white/15" />
+          <div className="pointer-events-none absolute inset-px h-full w-full rounded-lg shadow-sm outline outline-black/5 lg:rounded-l-4xl dark:outline-white/15" />
         </Link>
       </motion.div>
 
@@ -53,13 +53,13 @@ const FeaturedProjectBentoGrid = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.3, delay: 0.1 }}
-        className="max-lg:row-start-1"
+        className="min-h-[200px] max-lg:row-start-1"
       >
         <Link
           href={`/projects/${project2.id}`}
-          className="group relative cursor-pointer"
+          className="group relative block h-full cursor-pointer"
         >
-          <div className="bg-card absolute inset-px rounded-lg transition-colors max-lg:rounded-t-4xl" />
+          <div className="bg-card absolute inset-px h-full w-full rounded-lg transition-colors max-lg:rounded-t-4xl" />
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
               <p className="mt-2 text-lg font-medium tracking-tight">
@@ -71,7 +71,7 @@ const FeaturedProjectBentoGrid = () => {
               </p>
             </div>
           </div>
-          <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl dark:outline-white/15" />
+          <div className="pointer-events-none absolute inset-px h-full w-full rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-t-4xl dark:outline-white/15" />
         </Link>
       </motion.div>
 
@@ -81,13 +81,13 @@ const FeaturedProjectBentoGrid = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "150px" }}
         transition={{ duration: 0.3, delay: 0.2 }}
-        className="max-lg:row-start-3 lg:col-start-2 lg:row-start-2"
+        className="min-h-[200px] max-lg:row-start-3 lg:col-start-2 lg:row-start-2"
       >
         <Link
           href={`/projects/${project3.id}`}
-          className="group relative cursor-pointer"
+          className="group relative block h-full cursor-pointer"
         >
-          <div className="bg-card absolute inset-px rounded-lg transition-colors" />
+          <div className="bg-card absolute inset-px h-full w-full rounded-lg transition-colors" />
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
             <div className="px-8 pt-8 sm:px-10 sm:pt-10">
               <p className="mt-2 text-lg font-medium tracking-tight">
@@ -100,7 +100,7 @@ const FeaturedProjectBentoGrid = () => {
               </p>
             </div>
           </div>
-          <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 dark:outline-white/15" />
+          <div className="pointer-events-none absolute inset-px h-full w-full rounded-lg shadow-sm outline outline-black/5 dark:outline-white/15" />
         </Link>
       </motion.div>
 
@@ -110,13 +110,13 @@ const FeaturedProjectBentoGrid = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.3, delay: 0.3 }}
-        className="lg:row-span-2"
+        className="min-h-[400px] lg:row-span-2"
       >
         <Link
           href={`/projects/${project4.id}`}
-          className="group bg-card relative cursor-pointer"
+          className="group relative block h-full cursor-pointer"
         >
-          <div className="bg-card absolute inset-px rounded-lg transition-colors max-lg:rounded-b-4xl lg:rounded-r-4xl" />
+          <div className="bg-card absolute inset-px h-full w-full rounded-lg transition-colors max-lg:rounded-b-4xl lg:rounded-r-4xl" />
           <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-r-[calc(2rem+1px)]">
             <div className="px-8 pt-8 pb-3 sm:px-10 sm:pt-10 sm:pb-0">
               <p className="mt-2 text-lg font-medium tracking-tight">
@@ -135,7 +135,7 @@ const FeaturedProjectBentoGrid = () => {
               </div>
             </div>
           </div>
-          <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-b-4xl lg:rounded-r-4xl dark:outline-white/15" />
+          <div className="pointer-events-none absolute inset-px h-full w-full rounded-lg shadow-sm outline outline-black/5 max-lg:rounded-b-4xl lg:rounded-r-4xl dark:outline-white/15" />
         </Link>
       </motion.div>
     </div>

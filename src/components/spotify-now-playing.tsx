@@ -76,7 +76,7 @@ const SpotifyNowPlaying = ({ data }: { data: SpotifyData }) => {
           transition={{ delay: 0.1 }}
         />
         <motion.div
-          className="absolute inset-0 rounded-md bg-green-500/20"
+          className="absolute inset-0 rounded-md"
           animate={{
             opacity: [0.2, 0.4, 0.2],
           }}

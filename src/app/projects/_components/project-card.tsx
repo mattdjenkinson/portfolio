@@ -47,18 +47,9 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               <TechStackList techStack={project.techStack} />
             </div>
 
-            {/* Featured Badge */}
-            {project.featured && (
-              <div className="my-4">
-                <span className="bg-primary/10 text-primary inline-block rounded-full px-3 py-1 text-xs font-medium">
-                  Featured
-                </span>
-              </div>
-            )}
-
             {/* View Project Link */}
-            <Link href={`/projects/${project.id}`} className="mt-auto">
-              <Button variant="link" className="">
+            <Link href={`/projects/${project.id}`} className="mt-4">
+              <Button variant="secondary" className="">
                 View Project
                 <svg
                   className="h-4 w-4 transition-transform group-hover:translate-x-1"
