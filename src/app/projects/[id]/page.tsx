@@ -53,7 +53,7 @@ const ProjectPage = async ({ params }: { params: Promise<{ id: string }> }) => {
         <ProjectPageHeader title={project?.title || ""} />
         <TechStackList techStack={project?.techStack || []} maxItems={100} />
 
-        <div className="relative mx-auto mt-12 mb-18 flex w-full items-center justify-center">
+        <div className="relative mx-auto mt-16 mb-18 flex w-full items-center justify-center sm:mt-16">
           {/* Desktop/Laptop View - Background */}
           <div className="relative w-full">
             <Image
