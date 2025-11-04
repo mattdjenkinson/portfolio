@@ -20,7 +20,10 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: false }}
     >
-      <div className="group relative block h-full">
+      <Link
+        href={`/projects/${project.id}`}
+        className="group relative block h-full"
+      >
         <div className="bg-card relative flex h-full flex-col overflow-hidden rounded-lg shadow-sm outline outline-black/5 transition-all duration-300 hover:shadow-md dark:outline-white/15">
           {/* Project Image */}
           <div className="relative h-48 w-full overflow-hidden bg-gray-900">
@@ -28,6 +31,8 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
               src={project.images.fullscreen}
               alt={project.title}
               fill
+              loading="eager"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-cover object-top transition-transform duration-300 group-hover:scale-105"
             />
           </div>
@@ -48,7 +53,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
             </div>
 
             {/* View Project Link */}
-            <Link href={`/projects/${project.id}`} className="mt-auto">
+            <div className="mt-auto">
               <Button variant="secondary" className="" size="sm">
                 View Project
                 <svg
@@ -65,10 +70,10 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
                   />
                 </svg>
               </Button>
-            </Link>
+            </div>
           </div>
         </div>
-      </div>
+      </Link>
     </motion.div>
   );
 }
