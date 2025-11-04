@@ -19,15 +19,6 @@ const Footer = () => {
         </a>
 
         <a
-          href="/matthew_jenkinson_cv.pdf"
-          download="Matthew Jenkinson CV.pdf"
-          className="hover:text-primary mt-4 flex w-fit items-center justify-start gap-2 transition-colors duration-300"
-        >
-          <File className="h-4 w-4" />
-          <span>CV</span>
-        </a>
-
-        <a
           href="https://github.com/mattdjenkinson"
           target="_blank"
           rel="noopener noreferrer"
