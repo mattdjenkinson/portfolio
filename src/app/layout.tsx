@@ -8,6 +8,7 @@ import NavMenu from "@/components/nav-menu";
 import Footer from "@/components/footer";
 import { WithContext } from "schema-dts";
 import { Person } from "schema-dts";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -22,8 +23,8 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.matthewjenkinson.dev"),
   title: {
-    template: "%s | Matthew Jenkinson",
-    default: "Matthew Jenkinson",
+    template: "%s | Matthew Jenkinson - Full-stack Developer",
+    default: "Matthew Jenkinson - Full-stack Developer",
   },
   description: "Full-stack developer based in Bristol",
   openGraph: {
@@ -68,6 +69,14 @@ export default function RootLayout({
           <ThemeToggle className="fixed right-4 bottom-4" />
           <Toaster position="top-right" />
         </ThemeProvider>
+
+        {/* Analytics */}
+        <Script
+          src="https://analytics.chipscoding.dev/script.js"
+          data-website-id="d45c62a8-1c98-4462-88b1-8fa72410e8ce"
+          strategy="afterInteractive"
+        />
+
         {/* JSON LD Schema */}
         <script
           type="application/ld+json"
