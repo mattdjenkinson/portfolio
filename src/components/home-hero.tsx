@@ -57,7 +57,10 @@ const HomeHero = () => {
           transition={{ duration: 0.3, delay: 0.2, ease: "easeOut" }}
           className="mt-8 flex items-center gap-x-6"
         >
-          <Link href="#projects">
+          <Link
+            href="#projects"
+            data-umami-event="Hero - Recent Projects Button"
+          >
             <Button className="pointer-events-auto">Recent Projects</Button>
           </Link>
         </motion.div>

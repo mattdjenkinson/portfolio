@@ -82,6 +82,7 @@ export function ThemeToggle({ className }: { className?: string }) {
       className={cn("z-30", className)}
     >
       <Button
+        data-umami-event="Theme Toggle Button"
         ref={buttonRef}
         variant="default"
         size="icon-lg"

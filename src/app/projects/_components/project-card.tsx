@@ -22,6 +22,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
     >
       <Link
         href={`/projects/${project.id}`}
+        data-umami-event={`Project Card - View Project Button - ${project.title}`}
         className="group relative block h-full"
       >
         <div className="bg-card relative flex h-full flex-col overflow-hidden rounded-lg shadow-sm outline outline-black/5 transition-all duration-300 hover:shadow-md dark:outline-white/15">

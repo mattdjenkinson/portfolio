@@ -42,7 +42,7 @@ export default function Home() {
         </h2>
         <FeaturedProjectBentoGrid />
         <div className="mt-4 flex justify-end">
-          <Link href="/projects">
+          <Link href="/projects" data-umami-event="View All Projects Button">
             <Button variant="link">View All Projects</Button>
           </Link>
         </div>

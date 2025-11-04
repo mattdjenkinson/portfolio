@@ -11,6 +11,7 @@ const Footer = () => {
       <ContentContainer id="contact">
         <h2 className="text-2xl font-semibold">Let&apos;s Chat</h2>
         <a
+          data-umami-event="Email Link"
           href="mailto:contact@matthewjenkinson.dev"
           className="hover:text-primary mt-8 flex w-fit items-center justify-start gap-2 transition-colors duration-300"
         >
@@ -19,6 +20,7 @@ const Footer = () => {
         </a>
 
         <a
+          data-umami-event="GitHub Link"
           href="https://github.com/mattdjenkinson"
           target="_blank"
           rel="noopener noreferrer"
@@ -47,6 +49,7 @@ const Footer = () => {
 
         <div className="text-muted-foreground mt-2 flex items-center gap-2">
           <a
+            data-umami-event="Sturdy Link"
             href="https://sturdy.build"
             target="_blank"
             className="hover:text-primary text-xs transition-colors duration-300"
@@ -55,6 +58,7 @@ const Footer = () => {
           </a>
           <span>|</span>
           <a
+            data-umami-event="Bristol Dev Link"
             href="https://bristol.dev"
             target="_blank"
             className="hover:text-primary text-xs transition-colors duration-300"

@@ -86,7 +86,12 @@ const ProjectPage = async ({ params }: { params: Promise<{ id: string }> }) => {
         </div>
 
         {project?.url && (
-          <a href={project?.url} target="_blank" rel="noopener noreferrer">
+          <a
+            href={project?.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-umami-event={`Project Page - View Live Site Button - ${project?.title}`}
+          >
             <Button variant="outline" className="">
               <ExternalLinkIcon className="size-4" />
               View live site
