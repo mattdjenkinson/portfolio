@@ -100,6 +100,10 @@ Designed for simplicity and speed, the site is statically generated with revalid
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       },
       {
+        name: "React",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
         name: "TypeScript",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
       },
@@ -139,6 +143,10 @@ A statically generated website for Resilience Weightlifting, designed to highlig
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
       },
       {
+        name: "React",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
         name: "TypeScript",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
       },
@@ -156,6 +164,50 @@ A statically generated website for Resilience Weightlifting, designed to highlig
       fullscreen: "/projects/rw_desktop.jpg",
     },
     url: "https://www.resilienceweightlifting.com",
+    featured: true,
+  },
+  {
+    id: "icescape",
+    title: "Icescape",
+    shortDescription:
+      "Sleek, easy-to-manage marketing sites for a national ice rink chain. Built with Nextjs and Tailwind CSS.",
+    description: `
+Icescape is a modern marketing site built to help the national ice rink chain showcase their locations and services. The build was designed in a way that allows them to deploy new locations quickly and easily.
+
+## Key Features
+
+- **Static Generation**: Blazing fast load times with on-demand revalidation.
+- **Custom CMS**: Fully editable content via Hygraph CMS.
+- **Multi-location**: One codebase for multiple locations.
+
+    `.trim(),
+    techStack: [
+      {
+        name: "Next.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        name: "React",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      },
+      {
+        name: "TypeScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "GraphQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+      },
+    ],
+    images: {
+      mobile: "/projects/icescape_mobile.jpg",
+      fullscreen: "/projects/icescape_desktop.jpg",
+    },
+    url: "https://www.icescapetrinitypark.com",
     featured: true,
   },
   {
@@ -194,7 +246,7 @@ A Shopify-powered e-commerce store for Kings County Distillery — built to capt
       fullscreen: "/projects/kcd_desktop.jpg",
     },
     url: "https://www.kingscountydistillery.com",
-    featured: true,
+    featured: false,
   },
   {
     id: "rossella",
