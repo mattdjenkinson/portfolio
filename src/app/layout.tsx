@@ -45,7 +45,11 @@ const jsonLd: WithContext<Person> = {
   image: "https://www.matthewjenkinson.com/matthew-jenkinson.jpg",
   description: "Full-stack developer based in Bristol",
   url: "https://www.matthewjenkinson.dev",
-  sameAs: ["https://github.com/mattdjenkinson"],
+  sameAs: [
+    "https://github.com/mattdjenkinson",
+    "https://www.chipscoding.dev",
+    "https://www.linkedin.com/in/matthew-d-jenkinson",
+  ],
 };
 
 export default function RootLayout({

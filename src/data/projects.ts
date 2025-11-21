@@ -325,6 +325,44 @@ An e-commerce site for Windrush 1027 — designed to balance refined branding wi
     featured: false,
   },
   {
+    id: "local-bristol",
+    title: "Local Bristol",
+    shortDescription: "A modern, content-driven site for Local Bristol.",
+    description: `
+A statically generated website for Local Bristol — an independent bar and restaurant in Bedminster that champions local breweries, distilleries, and suppliers. The site provides a modern platform to showcase their seasonal menus, events, and community-focused dining experience.
+
+## Key Features
+
+- **Static Generation**: Ultra-fast pages with revalidation for new content.
+- **Hygraph CMS**: Content managed effortlessly through a clean interface.
+- **Custom Layouts**: Fully adjustable and easy to update.
+    `.trim(),
+    techStack: [
+      {
+        name: "Next.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      },
+      {
+        name: "TypeScript",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+      },
+      {
+        name: "Tailwind CSS",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+      },
+      {
+        name: "GraphQL",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/graphql/graphql-plain.svg",
+      },
+    ],
+    images: {
+      mobile: "/projects/local_mobile.jpg",
+      fullscreen: "/projects/local_desktop.jpg",
+    },
+    url: "https://www.localbristol.co.uk",
+    featured: false,
+  },
+  {
     id: "laura-bennett",
     title: "Laura Bennett",
     shortDescription:

@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import Copyright from "./copyright";
 import ContentContainer from "./content-container";
 import SpotifyWrapper from "./spotify-wrapper";
-import { File, Github, Mail } from "lucide-react";
+import { File, Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -28,6 +28,17 @@ const Footer = () => {
         >
           <Github className="h-4 w-4" />
           <span>GitHub</span>
+        </a>
+
+        <a
+          data-umami-event="LinkedIn Link"
+          href="https://www.linkedin.com/in/matthew-d-jenkinson"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-primary mt-4 flex w-fit items-center justify-start gap-2 transition-colors duration-300"
+        >
+          <Linkedin className="h-4 w-4" />
+          <span>LinkedIn</span>
         </a>
       </ContentContainer>
 
