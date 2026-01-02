@@ -66,6 +66,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-mono antialiased`}
       >
+        {/* Bug Buddy Widget */}
+        <Script
+          src="https://bugbuddy.dev/widget.js"
+          data-project-key="bb_139e6995d57f7f9e54ee4e2f8af01cb145806d8072b11ee0902aec7ad8212ae1"
+          data-app-url="https://bugbuddy.dev"
+        />
         <ThemeProvider attribute="class" defaultTheme="dark">
           <NavMenu />
           <main>{children}</main>
