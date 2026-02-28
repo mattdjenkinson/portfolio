@@ -69,9 +69,11 @@ export default function RootLayout({
         {/* Bug Buddy Widget */}
         <Script
           src="https://bugbuddy.dev/widget.js"
-          data-project-key="bb_139e6995d57f7f9e54ee4e2f8af01cb145806d8072b11ee0902aec7ad8212ae1"
+          data-project-key="bb_9470b0abe7e3aa5212348ebc2c28bd14d445d676388983a5a2837fdd0159310e"
           data-app-url="https://bugbuddy.dev"
+          strategy="afterInteractive"
         />
+
         <ThemeProvider attribute="class" defaultTheme="dark">
           <NavMenu />
           <main>{children}</main>
